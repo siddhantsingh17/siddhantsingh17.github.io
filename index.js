@@ -14,7 +14,7 @@ let on = document.querySelector('button')
 
 let b = 2;
 
-on.addEventListener('click', ()=> {
+on.addEventListener('click', () => {
     if (b == 2) {
         bulb.style.backgroundColor = 'transparent'
         b = 1
@@ -32,51 +32,51 @@ on.addEventListener('click', ()=> {
 
 // बलाब  end
 
-मित्र बटन दो
+//मित्र बटन दो
 
-let addButton = document.querySelector('#add')
-let friendStatusChange = document.querySelector('h5')
-let removeButton = document.querySelector('#Remove')
+// let addButton = document.querySelector('#add')
+// let friendStatusChange = document.querySelector('h5')
+// let removeButton = document.querySelector('#Remove')
 
-addButton.addEventListener("click", ()=>{
-    friendStatusChange.innerHTML = "Your Firend"
+// addButton.addEventListener("click", ()=>{
+//     friendStatusChange.innerHTML = "Your Firend"
 
-})
+// })
 
-removeButton.addEventListener('click',()=>{
-    friendStatusChange.innerHTML= "remove Friend"
-})
+// removeButton.addEventListener('click',()=>{
+//     friendStatusChange.innerHTML= "remove Friend"
+// })
 
-मित्र बटन दो end
+//मित्र बटन दो end
 
-मित्र बटन एक
+//मित्र बटन एक
 
-let addButton = document.querySelector('#add')
-let friendStatusChange = document.querySelector('h5')
+// let addButton = document.querySelector('#add')
+// let friendStatusChange = document.querySelector('h5')
 
-let a = 0;
-
-
-addButton.addEventListener("click", () => {
-    if (a == 0) {
-        friendStatusChange.innerHTML = "Your Firend"
-        addButton.innerHTML='remove'
-        a = 1;
-    }
-    else{
-        friendStatusChange.innerHTML = "remove"
-        addButton.innerHTML='add friend'
-        a = 0;
-    }
+// let a = 0;
 
 
-})
+// addButton.addEventListener("click", () => {
+//     if (a == 0) {
+//         friendStatusChange.innerHTML = "Your Firend"
+//         addButton.innerHTML='remove'
+//         a = 1;
+//     }
+//     else{
+//         friendStatusChange.innerHTML = "remove"
+//         addButton.innerHTML='add friend'
+//         a = 0;
+//     }
 
-मित्र बटन एक end
 
-setTimeout(()=>{
-    console.log("ram")
-},5000)
+// })
+
+//मित्र बटन एक end
+
+// setTimeout(()=>{
+//     console.log("ram")
+// },5000)
 
 
 // doble click on images 
@@ -92,12 +92,12 @@ let a = 0;
 addButton.addEventListener("click", () => {
     if (a == 0) {
         friendStatusChange.innerHTML = "Your Firend"
-        addButton.innerHTML='remove'
+        addButton.innerHTML = 'remove'
         a = 1;
     }
-    else{
+    else {
         friendStatusChange.innerHTML = "remove"
-        addButton.innerHTML='add friend'
+        addButton.innerHTML = 'add friend'
         a = 0;
     }
 })
@@ -107,43 +107,81 @@ addButton.addEventListener("click", () => {
 //     iconSelector.style.opacity = '1'
 // })
 
-imgSelector.addEventListener("click", ()=>{
-    if(a == 0){
-        iconSelector.style.scale= '7';
+imgSelector.addEventListener("click", () => {
+    if (a == 0) {
+        iconSelector.style.scale = '7';
         a = 1;
     }
-    else{
-        iconSelector.style.scale= '0';
+    else {
+        iconSelector.style.scale = '0';
         a = 0
     }
-    
+
 })
 
-    let reg = /\wsiddhant/;
-    let str = "esiddhant is a bad boy that you"
-    let result = reg.exec(str)
-    console.log("this is a", result)
+let reg = /\wsiddhant/;
+let str = "esiddhant is a bad boy that you"
+let result = reg.exec(str)
+console.log("this is a", result)
 
-        // if(reg.exec(str)){
-        //     console.log(`the string ${str} match the expresaon ${reg.source}`)
-        // }else{
-        //     console.log(`the string ${str} not match the expresaon${reg.source}`)
-        // }
+// if(reg.exec(str)){
+//     console.log(`the string ${str} match the expresaon ${reg.source}`)
+// }else{
+//     console.log(`the string ${str} not match the expresaon${reg.source}`)
+// }
 
 
 
-    //this keyword tutorial
+//this keyword tutorial
 
-    // let thisKeyword = {
-    //     username: 'siddhant',
-    //     age: 34,
-        
-    //     welcome: function () {
-    //       console.log(`hi ${this.username} you ${this.age} and it got ragested`)
-    //     }
-    //   }
-      
-    //   thisKeyword.welcome(); //call 
-    //   thisKeyword.age=54   // change the age 
-    //   thisKeyword.welcome(); // call
+// let thisKeyword = {
+//     username: 'siddhant',
+//     age: 34,
+
+//     welcome: function () {
+//       console.log(`hi ${this.username} you ${this.age} and it got ragested`)
+//     }
+//   }
+
+//   thisKeyword.welcome(); //call 
+//   thisKeyword.age=54   // change the age 
+//   thisKeyword.welcome(); // call
+
+// JavaScript Classes start
+
+class fill{
+    constructor(firstName,lastName,email,phone,company,){
+        this.firstName = firstName;
+        this.lastName  = lastName;
+        this.email = email;
+        this.phone = phone;
+        this.company = company;
+    }
+
+    changeFirstName(){
+        return `${this.firstname}`
+    }
+    changelastName(){
+        return `${this.laststname}`
+    }
+    changeemail(){
+        return `${this.email}`
+    }
+    changephone(){
+        return `${this.phone}`
+    }
+    changecompany(){
+        return `${this.company}`
+    }
+
+}
+
+const sid = new fill('siddhant','singh','sid@gmail.com',900477322274,'rilln')
+console.log(sid)
+const kri = new fill('krishna','singh','kri@gmail.com',8977322274,'keprosh')
+
+console.log(kri)
+
+// JavaScript Classes end
+
 

@@ -52,3 +52,29 @@
     margin: 40px;
     
 }
+.color{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    border: 2px solid black;
+    width: 100px;
+    height: 300px;
+    margin: 20px;
+}
+#red{
+    background-color: red;
+}
+#gary{
+    background-color: gray;
+}
+#blue{
+    background-color: blue;
+}
+#pink{
+    background-color: pink;
+}
+#yellow{
+    background-color: yellow;
+}
