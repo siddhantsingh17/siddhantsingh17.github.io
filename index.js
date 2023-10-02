@@ -29,3 +29,121 @@ on.addEventListener('click', ()=> {
     }
 })
 
+
+// बलाब  end
+
+मित्र बटन दो
+
+let addButton = document.querySelector('#add')
+let friendStatusChange = document.querySelector('h5')
+let removeButton = document.querySelector('#Remove')
+
+addButton.addEventListener("click", ()=>{
+    friendStatusChange.innerHTML = "Your Firend"
+
+})
+
+removeButton.addEventListener('click',()=>{
+    friendStatusChange.innerHTML= "remove Friend"
+})
+
+मित्र बटन दो end
+
+मित्र बटन एक
+
+let addButton = document.querySelector('#add')
+let friendStatusChange = document.querySelector('h5')
+
+let a = 0;
+
+
+addButton.addEventListener("click", () => {
+    if (a == 0) {
+        friendStatusChange.innerHTML = "Your Firend"
+        addButton.innerHTML='remove'
+        a = 1;
+    }
+    else{
+        friendStatusChange.innerHTML = "remove"
+        addButton.innerHTML='add friend'
+        a = 0;
+    }
+
+
+})
+
+मित्र बटन एक end
+
+setTimeout(()=>{
+    console.log("ram")
+},5000)
+
+
+// doble click on images 
+
+let addButton = document.querySelector('#add')
+let friendStatusChange = document.querySelector('h5')
+let iconSelector = document.querySelector('#myIcon')
+let imgSelector = document.querySelector('#myImages')
+
+let a = 0;
+
+
+addButton.addEventListener("click", () => {
+    if (a == 0) {
+        friendStatusChange.innerHTML = "Your Firend"
+        addButton.innerHTML='remove'
+        a = 1;
+    }
+    else{
+        friendStatusChange.innerHTML = "remove"
+        addButton.innerHTML='add friend'
+        a = 0;
+    }
+})
+
+
+// imgSelector.addEventListener('dblclick', ()=>{
+//     iconSelector.style.opacity = '1'
+// })
+
+imgSelector.addEventListener("click", ()=>{
+    if(a == 0){
+        iconSelector.style.scale= '7';
+        a = 1;
+    }
+    else{
+        iconSelector.style.scale= '0';
+        a = 0
+    }
+    
+})
+
+    let reg = /\wsiddhant/;
+    let str = "esiddhant is a bad boy that you"
+    let result = reg.exec(str)
+    console.log("this is a", result)
+
+        // if(reg.exec(str)){
+        //     console.log(`the string ${str} match the expresaon ${reg.source}`)
+        // }else{
+        //     console.log(`the string ${str} not match the expresaon${reg.source}`)
+        // }
+
+
+
+    //this keyword tutorial
+
+    // let thisKeyword = {
+    //     username: 'siddhant',
+    //     age: 34,
+        
+    //     welcome: function () {
+    //       console.log(`hi ${this.username} you ${this.age} and it got ragested`)
+    //     }
+    //   }
+      
+    //   thisKeyword.welcome(); //call 
+    //   thisKeyword.age=54   // change the age 
+    //   thisKeyword.welcome(); // call
+
